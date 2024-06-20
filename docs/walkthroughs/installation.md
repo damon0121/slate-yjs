@@ -182,7 +182,6 @@ const Editor = () => {
 
   // Setup the binding
   const editor = useMemo(() => {
-    const sharedType = provider.document.get('content', Y.XmlText);
     const e = withReact(withYjs(createEditor(), sharedType));
 
     // Ensure editor always has at least 1 valid child
